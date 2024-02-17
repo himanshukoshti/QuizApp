@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import StartPage from './components/StartPage'
+import Quiz from './components/Quiz'
+import Summary from './components/Summary'
+import ShowAnswers from './components/ShowAnswers'
+import './style.css'
 
 function App() {
+  const [started, setStarted] = useState(false)
+  const [finished, setFinished] = useState(false)
+  const [answers, setAnswers] = useState([])
+  const [showAnswersPage, setShowAnswersPage] = useState(false)
+
+  const startQuiz = () => {
+    setStarted(true)
+  }
+
+  const finishQuiz = (answers) => {
+    setFinished(true)
+    setAnswers(answers)
+  }
+
+  const showAnswers = () => {
+    setShowAnswersPage(true)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid">
+      {!started && !finished && <StartPage onStart={startQuiz} />}
+      {started && !finished && <Quiz onFinish={finishQuiz} />}
+      {finished && <Summary answers={answers} onShowAnswers={showAnswers}/>}
+      {showAnswersPage && <ShowAnswers answers={answers} />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

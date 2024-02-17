@@ -1,0 +1,52 @@
+[
+    {
+      "text": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Rome"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "text": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Venus", "Jupiter"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "text": "Who wrote 'To Kill a Mockingbird'?",
+      "options": ["Harper Lee", "Stephen King", "J.K. Rowling", "Ernest Hemingway"],
+      "correctAnswer": "Harper Lee"
+    },
+    {
+      "text": "What is the chemical symbol for water?",
+      "options": ["H2O", "CO2", "NaCl", "O2"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "text": "What is the largest mammal in the world?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": "Blue Whale"
+    },
+    {
+      "text": "What is the capital of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+      "correctAnswer": "Tokyo"
+  },
+  {
+      "text": "Who painted the Mona Lisa?",
+      "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Michelangelo"],
+      "correctAnswer": "Leonardo da Vinci"
+  },
+  {
+      "text": "What is the chemical symbol for gold?",
+      "options": ["Ag", "Au", "Fe", "Pt"],
+      "correctAnswer": "Au"
+  },
+  {
+      "text": "Which is the smallest planet in our solar system?",
+      "options": ["Earth", "Jupiter", "Mercury", "Venus"],
+      "correctAnswer": "Mercury"
+  },
+  {
+      "text": "Who wrote '1984'?",
+      "options": ["George Orwell", "Ernest Hemingway", "F. Scott Fitzgerald", "Aldous Huxley"],
+      "correctAnswer": "George Orwell"
+  }
+]  
